@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, Outlet, useNavigation } from "react-router-dom";
 import './MainLaout.css';
 import Footer from './Footer';
+import Home from './Home';
 const MainLayout = () => {
     const navigation = useNavigation;
     return (
@@ -14,6 +15,7 @@ const MainLayout = () => {
             <NavLink className={'nav'} to="/dashboard">Dashboard</NavLink>
            </ul>
            </nav>
+  
 
            <div className='min-h-screen'>
             {

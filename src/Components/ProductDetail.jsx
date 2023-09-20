@@ -3,7 +3,6 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const ProductDetail = () => {
     const productdetail = useLoaderData();
-    console.log(productdetail);
     const {brand,thumbnail,description} = productdetail;
     return (
         <div className=" mt-3 max-w-sm m-auto  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-3">

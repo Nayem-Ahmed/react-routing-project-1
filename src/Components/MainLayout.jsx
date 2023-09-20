@@ -18,9 +18,9 @@ const MainLayout = () => {
   
 
            <div className='min-h-screen'>
-            {
-               navigation.state === "loading" ? 'Loading.......' :<Outlet></Outlet>
-            }
+            
+                <Outlet></Outlet>
+            
            
            </div>
             <Footer></Footer>

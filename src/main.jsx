@@ -9,9 +9,9 @@ import Home from './Components/Home.jsx';
 import MainLayout from './Components/MainLayout.jsx';
 import Products from './Components/Products.jsx';
 import Dashboard from './Components/Dashboard.jsx';
-import ProductDetail from './Components/ProductDetail';
 import Profile from './Components/Profile';
 import EditProfile from './Components/EditProfile';
+import ProductDetail from './Components/ProductDetail';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,8 +31,8 @@ const router = createBrowserRouter([
       element: <Products></Products>
      },
      {
-      path: '/products/;',
-      loader: ()=> fetch(`https://dummyjson.com/products/${id}`),
+      path:'/products/:userId',
+      loader:({params})=>fetch(`https://dummyjson.com/products/${params.userId}`),
       element: <ProductDetail></ProductDetail>
      },
      {
